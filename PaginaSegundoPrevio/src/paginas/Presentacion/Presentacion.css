@@ -1,0 +1,111 @@
+/* ── Sección hero: nombre + avatar ───────────────────────────────────────── */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* en pantallas pequeñas pasa a columna */
+}
+
+.saludo {
+  color: var(--morado);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.nombre {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--texto);
+  line-height: 1.3;
+  margin-bottom: 0.2rem;
+}
+
+.nombre-2 {
+  margin-bottom: 0.75rem;
+}
+
+/* ── Fila de códigos de estudiante ───────────────────────────────────────── */
+.codigos {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* ── Pastillita con el código ────────────────────────────────────────────── */
+.badge {
+  background-color: var(--morado-claro);
+  color: #3a3a9a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.profesion {
+  color: var(--texto-gris);
+  font-size: 0.92rem;
+  margin-top: 0.25rem;
+}
+
+/* ── Avatar circular (emoji de placeholder) ──────────────────────────────── */
+.avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--morado-claro), var(--morado));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  flex-shrink: 0;
+  border: 4px solid var(--blanco);
+  box-shadow: 0 4px 16px rgba(154, 154, 249, 0.35);
+  transition: transform 0.2s;
+}
+
+.avatar:hover {
+  transform: scale(1.04);
+}
+
+/* ── Avatar con foto real ────────────────────────────────────────────────── */
+.avatar-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 4px solid var(--blanco);
+  box-shadow: 0 4px 16px rgba(154, 154, 249, 0.35);
+  transition: transform 0.2s;
+}
+
+.avatar-img:hover {
+  transform: scale(1.04);
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .codigos {
+    justify-content: center;
+  }
+
+  .avatar,
+  .avatar-img {
+    width: 130px;
+    height: 130px;
+    font-size: 3rem;
+  }
+
+  .nombre {
+    font-size: 1.3rem;
+  }
+}

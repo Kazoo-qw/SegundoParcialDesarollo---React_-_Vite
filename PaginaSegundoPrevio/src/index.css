@@ -1,0 +1,71 @@
+/* ── Variables globales de color ─────────────────────────────────────────── */
+:root {
+  --azul-nav: #1565c0;
+  --morado: rgb(154, 154, 249);
+  --morado-claro: rgb(218, 218, 255);
+  --morado-hover: rgb(195, 195, 245);
+  --fondo: #eef2ff;
+  --blanco: #ffffff;
+  --texto: #1a1a2e;
+  --texto-gris: #555;
+  --borde: #e0e0f0;
+}
+
+/* ── Reset de márgenes del navegador ─────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+/* ── Animación de entrada suave ──────────────────────────────────────────── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease forwards;
+}
+
+/* ── Contenedor principal de cada página ─────────────────────────────────── */
+.pagina {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+/* ── Título de sección (compartido entre Presentación y Favoritos) ────────── */
+.seccion-titulo {
+  text-align: center;
+  color: var(--morado);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Fila de cards (compartida entre Presentación y Favoritos) ───────────── */
+.cards-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ── Responsive global ───────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .cards-row {
+    flex-direction: column;
+  }
+}

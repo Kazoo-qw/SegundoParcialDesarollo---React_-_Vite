@@ -1,0 +1,96 @@
+/* ── Contenedor principal: dos columnas ──────────────────────────────────── */
+.materias-container {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #d2d2d2;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: var(--blanco);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06)
+}
+
+/* ── Columna izquierda: lista de materias ────────────────────────────────── */
+.lista-materias {
+  flex: 1;
+  list-style: none;
+  border-right: 1px solid #d2d2d2;
+  min-width: 250px;
+}
+
+.lista-materias li {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #e0e0f0;
+  background-color: var(--morado-claro);
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--texto);
+  border-left: 4px solid transparent;
+  transition: background-color 0.15s, border-color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lista-materias li:hover {
+  background-color: var(--morado-hover);
+}
+
+/* ── Flechita indicadora (solo visible en la materia activa) ─────────────── */
+.mat-bullet {
+  font-size: 0.65rem;
+  opacity: 0;
+  color: #5555cc;
+  transition: opacity 0.15s;
+}
+
+/* ── Materia seleccionada ────────────────────────────────────────────────── */
+.activo {
+  background-color: var(--morado) !important;
+  color: #111 !important;
+  font-weight: 600;
+  border-left: 4px solid #5555cc !important;
+}
+
+.activo .mat-bullet {
+  opacity: 1;
+}
+
+/* ── Columna derecha: descripción de la materia seleccionada ─────────────── */
+.descripcion-materia {
+  flex: 2;
+  padding: 1.75rem;
+}
+
+.materia-nombre {
+  color: var(--morado);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Línea decorativa bajo el nombre ────────────────────────────────────── */
+.materia-divider {
+  width: 48px;
+  height: 3px;
+  background: var(--morado);
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.materia-desc {
+  color: var(--texto-gris);
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .materias-container {
+    flex-direction: column;
+  }
+
+  .lista-materias {
+    border-right: none;
+    border-bottom: 1px solid #d2d2d2;
+  }
+}

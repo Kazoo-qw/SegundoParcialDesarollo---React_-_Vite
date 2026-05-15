@@ -1,0 +1,55 @@
+/* ── Barra de navegación ─────────────────────────────────────────────────── */
+.navbar {
+  background-color: var(--azul-nav);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2.5rem;
+  position: sticky; /* se queda pegada arriba al hacer scroll */
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(21, 101, 192, 0.35);
+}
+
+.navbar-logo {
+  font-size: 2rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ── Links de navegación ─────────────────────────────────────────────────── */
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.75rem;
+  border-bottom: 2px solid transparent;
+  transition: font-size 0.2s, color 0.2s;
+  display: inline-block;
+  width: 110px;         /* ← esto evita que se muevan */
+  text-align: center;   /* ← para que el texto quede centrado */
+}
+
+.nav-link:hover {
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* ── Link activo (página actual) ─────────────────────────────────────────── */
+.activo-nav {
+  color: white !important;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
+
+
+
+
