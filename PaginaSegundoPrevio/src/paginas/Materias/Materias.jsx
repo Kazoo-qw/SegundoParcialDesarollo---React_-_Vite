@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Materias.css';
 
-// ─── Datos: materias de la carrera ───────────────────────────────────────────
+//  Datos: materias de la carrera 
 const MATERIAS = {
   'Diseno web y sistemas operativos': {
     nombre: 'Diseno web y sistemas operativos',
@@ -25,7 +25,7 @@ const MATERIAS = {
   },
 };
 
-// ─── Página 2: Materias ───────────────────────────────────────────────────────
+//  Página 2: Materias 
 const Materias = () => {
   // useState: controla cuál materia está seleccionada en la lista lateral
   const [seleccionada, setSeleccionada] = useState('Diseno web y sistemas operativos');
@@ -34,7 +34,7 @@ const Materias = () => {
     <div className="pagina fade-in">
       <div className="materias-container">
 
-        {/* ── Lista lateral de materias ─────────────────────────────────── */}
+        {/*  Lista lateral de materias  */}
         <ul className="lista-materias">
           {Object.keys(MATERIAS).map((key) => (
             <li
@@ -48,7 +48,7 @@ const Materias = () => {
           ))}
         </ul>
 
-        {/* ── Panel de detalle: cambia dinámicamente al hacer clic ─────── */}
+        {/*  Panel de detalle: cambia dinámicamente al hacer clic  */}
         <div className="descripcion-materia">
           <h2 className="materia-nombre">{MATERIAS[seleccionada].nombre}</h2>
           <div className="materia-divider" />

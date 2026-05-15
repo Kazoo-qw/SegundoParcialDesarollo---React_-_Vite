@@ -11,13 +11,13 @@
   cursor: default;
 }
 
-/* ── Efecto hover (activado desde JSX con useState) ──────────────────────── */
+/* Efecto hover (activado desde JSX con useState) */
 .card-hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(154, 154, 249, 0.25);
 }
 
-/* ── Número grande tipo 01, 02, 03 ──────────────────────────────────────── */
+/*Número grande tipo 01, 02, 03*/
 .card-numero {
   font-size: 2.5rem;
   font-weight: 700;
@@ -26,7 +26,7 @@
   line-height: 1;
 }
 
-/* ── Texto descriptivo del compromiso ────────────────────────────────────── */
+/* Texto descriptivo del compromiso */
 .card-descripcion {
   font-size: 0.88rem;
   color: var(--texto-gris);

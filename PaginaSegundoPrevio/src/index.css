@@ -1,4 +1,4 @@
-/* ── Variables globales de color ─────────────────────────────────────────── */
+/*  Variables globales de color  */
 :root {
   --azul-nav: #1565c0;
   --morado: rgb(154, 154, 249);
@@ -11,7 +11,7 @@
   --borde: #e0e0f0;
 }
 
-/* ── Reset de márgenes del navegador ─────────────────────────────────────── */
+/*  Reset de márgenes del navegador  */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ body {
   color: var(--texto);
 }
 
-/* ── Animación de entrada suave ──────────────────────────────────────────── */
+/*  Animación de entrada suave a las páginas  */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -40,14 +40,14 @@ body {
   animation: fadeIn 0.35s ease forwards;
 }
 
-/* ── Contenedor principal de cada página ─────────────────────────────────── */
+/* Contenedor principal de cada página  */
 .pagina {
   max-width: 900px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
 }
 
-/* ── Título de sección (compartido entre Presentación y Favoritos) ────────── */
+/*  Título de sección (compartido entre Presentación y Favoritos)  */
 .seccion-titulo {
   text-align: center;
   color: var(--morado);
@@ -56,14 +56,14 @@ body {
   margin-bottom: 1.25rem;
 }
 
-/* ── Fila de cards (compartida entre Presentación y Favoritos) ───────────── */
+/*  Fila de cards (compartida entre Presentación y Favoritos)  */
 .cards-row {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-/* ── Responsive global ───────────────────────────────────────────────────── */
+/*  Responsive global  */
 @media (max-width: 640px) {
   .cards-row {
     flex-direction: column;

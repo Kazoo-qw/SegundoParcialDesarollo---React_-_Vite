@@ -17,12 +17,12 @@ const compromisos = [
   },
 ];
 
-// ─── Página 1: Presentación ───────────────────────────────────────────────────
+//  Página 1: Presentación 
 const Presentacion = () => {
   return (
     <div className="pagina fade-in">
 
-      {/* ── Hero: nombres e imagen ──────────────────────────────────────── */}
+      {/* Hero: nombres e imagen */}
       <div className="hero">
         <div className="hero-texto">
           <p className="saludo">Hola 👋</p>
@@ -45,7 +45,7 @@ const Presentacion = () => {
 
       </div>
 
-      {/* ── Sección: Compromisos ─────────────────────────────────────────── */}
+      {/* s Sección: Compromisos  */}
       <h2 className="seccion-titulo">Mis Compromisos en la Materia</h2>
       <div className="cards-row">
         {compromisos.map((c) => (

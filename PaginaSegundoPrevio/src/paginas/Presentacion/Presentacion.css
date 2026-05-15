@@ -1,4 +1,4 @@
-/* ── Sección hero: nombre + avatar ───────────────────────────────────────── */
+/*  Sección hero: nombre + avatar  */
 .hero {
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@
   margin-bottom: 0.75rem;
 }
 
-/* ── Fila de códigos de estudiante ───────────────────────────────────────── */
+/*  Fila de códigos de estudiante  */
 .codigos {
   display: flex;
   gap: 0.5rem;
@@ -35,7 +35,7 @@
   flex-wrap: wrap;
 }
 
-/* ── Pastillita con el código ────────────────────────────────────────────── */
+/*  Pastillita con el código  */
 .badge {
   background-color: var(--morado-claro);
   color: #3a3a9a;
@@ -51,7 +51,7 @@
   margin-top: 0.25rem;
 }
 
-/* ── Avatar circular (emoji de placeholder) ──────────────────────────────── */
+/*  Avatar circular (emoji de placeholder)  */
 .avatar {
   width: 170px;
   height: 170px;
@@ -71,7 +71,7 @@
   transform: scale(1.04);
 }
 
-/* ── Avatar con foto real ────────────────────────────────────────────────── */
+/*  Avatar con foto real  */
 .avatar-img {
   width: 170px;
   height: 170px;
@@ -87,7 +87,7 @@
   transform: scale(1.04);
 }
 
-/* ── Responsive ──────────────────────────────────────────────────────────── */
+/*  Responsive  */
 @media (max-width: 640px) {
   .hero {
     flex-direction: column-reverse;

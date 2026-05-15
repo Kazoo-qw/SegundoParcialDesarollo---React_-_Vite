@@ -2,7 +2,7 @@ import { useState } from 'react';
 import LearningCard from '../../componentes/LearningCard/LearningCard';
 import './Favoritos.css';
 
-// ─── Datos: cosas que me gustaría aprender ───────────────────────────────────
+//  Datos: cosas que me gustaría aprender 
 const APRENDER = [
   {
     imagen: 'https://www.educacionfutura.org/wp-content/uploads/2025/01/Imagen-IA.png',
@@ -24,7 +24,7 @@ const APRENDER = [
   },
 ];
 
-// ─── Página 3: Favoritos ──────────────────────────────────────────────────────
+//  Página 3: Favoritos 
 const Favoritos = () => {
   // useState: controla si la sección "¿Por qué nos gusta?" está visible o no
   const [mostrarPorQue, setMostrarPorQue] = useState(false);
@@ -32,7 +32,7 @@ const Favoritos = () => {
   return (
     <div className="pagina fade-in">
 
-      {/* ── Card: materia favorita ──────────────────────────────────────── */}
+      {/*  Card: materia favorita  */}
       <div className="favorito-card">
         <p className="favorito-label">⭐ Materia Favorita</p>
         <h1 className="favorito-titulo">Desarrollo de Aplicaciones Web</h1>
@@ -42,7 +42,7 @@ const Favoritos = () => {
           para construir soluciones reales.
         </p>
 
-        {/* Botón que alterna la visibilidad usando useState */}
+        {/* Boton que alterna la visibilidad usando useState */}
         <button
           className="btn-toggle"
           onClick={() => setMostrarPorQue(!mostrarPorQue)}
@@ -50,7 +50,7 @@ const Favoritos = () => {
           {mostrarPorQue ? '▲ Ocultar' : '▼ ¿Por qué nos gusta?'}
         </button>
 
-        {/* Sección colapsable — solo se renderiza cuando mostrarPorQue es true */}
+        {/* Seccion colapsable — solo se usa cuando mostrarPorQue es true */}
         {mostrarPorQue && (
           <div className="por-que">
             <p className="pq-texto">
@@ -62,7 +62,7 @@ const Favoritos = () => {
         )}
       </div>
 
-      {/* ── Sección: Cosas que me gustaría aprender ─────────────────────── */}
+      {/*  Sección: Cosas que me gustaría aprender  */}
       <h2 className="seccion-titulo">Cosas que me gustaría aprender</h2>
       <div className="cards-row">
         {APRENDER.map((item) => (

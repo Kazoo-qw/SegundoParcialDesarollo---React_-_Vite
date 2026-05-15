@@ -11,13 +11,13 @@
   cursor: default;
 }
 
-/* ── Efecto hover (activado desde JSX con useState) ──────────────────────── */
+/*  Efecto hover (activado desde JSX con useState) */
 .card-hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(154, 154, 249, 0.25);
 }
 
-/* ── Contenedor de la imagen ─────────────────────────────────────────────── */
+/*  Contenedor de la imagen  */
 .card-imagen-wrapper {
   width: 100%;
   height: 140px;
@@ -26,7 +26,7 @@
   margin-bottom: 1rem;
 }
 
-/* ── Imagen real ─────────────────────────────────────────────────────────── */
+/*  Imagen real  */
 .card-imagen {
   width: 100%;
   height: 100%;
@@ -34,7 +34,7 @@
   display: block;
 }
 
-/* ── Placeholder cuando no hay imagen ───────────────────────────────────── */
+/*  Placeholder cuando no hay imagen  */
 .card-imagen-placeholder {
   width: 100%;
   height: 100%;
@@ -50,7 +50,7 @@
   padding: 0.5rem;
 }
 
-/* ── Título de la card ───────────────────────────────────────────────────── */
+/*  Título de la card */
 .card-titulo {
   font-size: 1rem;
   font-weight: 600;
@@ -58,7 +58,7 @@
   margin-bottom: 0.4rem;
 }
 
-/* ── Descripción de la card ──────────────────────────────────────────────── */
+/*  Descripción de la card  */
 .card-descripcion {
   font-size: 0.88rem;
   color: var(--texto-gris);

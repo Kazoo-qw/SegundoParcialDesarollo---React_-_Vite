@@ -19,7 +19,7 @@ const LearningCard = ({ imagen, titulo, descripcion }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {/* ── Imagen o placeholder ─────────────────────────────────────────── */}
+      {/*  Imagen o placeholder  */}
       <div className="card-imagen-wrapper">
         {imagen ? (
           // Imagen real cuando la prop tiene una ruta válida

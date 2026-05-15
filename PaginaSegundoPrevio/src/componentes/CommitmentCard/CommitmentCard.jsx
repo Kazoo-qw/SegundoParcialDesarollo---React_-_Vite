@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './CommitmentCard.css';
 
-// ─── Componente: CommitmentCard ───────────────────────────────────────────────
+//   Componente: CommitmentCard 
 // Muestra una card numérica con efecto hover interactivo.
 //
 // Props:
-//   numero      → número grande que identifica el compromiso (ej: "01")
-//   descripcion → texto que describe el compromiso
+//   numero      - número grande que identifica el compromiso (ej: "01")
+//   descripcion - texto que describe el compromiso
 const CommitmentCard = ({ numero, descripcion }) => {
   // useState controla el efecto visual al pasar el mouse
   const [hovered, setHovered] = useState(false);
