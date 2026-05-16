@@ -3,7 +3,7 @@ import './Navbar.css';
 
 //  Componente: Navbar
 // Visible en todas las páginas gracias a Aplicación.jsx.
-// Usa NavLink de React Router para resaltar automáticamente la ruta activa.
+// Usa NavLink de React Router cambia la URL sin recargar a esto se le llama Single Page Application.
 const Navbar = () => {
   return (
     <nav className="navbar">

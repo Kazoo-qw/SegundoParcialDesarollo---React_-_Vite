@@ -3,8 +3,8 @@ import './Materias.css';
 
 //  Datos: materias de la carrera 
 const MATERIAS = {
-  'Diseno web y sistemas operativos': {
-    nombre: 'Diseno web y sistemas operativos',
+  'Diseño web y sistemas operativos': {
+    nombre: 'Diseño web y sistemas operativos',
     descripcion:
       'Aprende los fundamentos del diseño visual para la web y el funcionamiento de los sistemas operativos modernos. Se trabajan conceptos como UI/UX, layouts responsivos, gestión de procesos y memoria.',
   },
@@ -28,7 +28,7 @@ const MATERIAS = {
 //  Página 2: Materias 
 const Materias = () => {
   // useState: controla cuál materia está seleccionada en la lista lateral
-  const [seleccionada, setSeleccionada] = useState('Diseno web y sistemas operativos');
+  const [seleccionada, setSeleccionada] = useState('Diseño web y sistemas operativos');
 
   return (
     <div className="pagina fade-in">
